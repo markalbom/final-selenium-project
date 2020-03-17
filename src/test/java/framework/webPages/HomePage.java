@@ -15,7 +15,11 @@ public class HomePage extends BasePage{
 	private By femaleGender = By.id("u_0_9");
 	private By maleGender = By.id("u_0_a");
 	private By messengerLink = By.id("");
-	
+
+
+
+
+
 	public void clickOnLoginButton() {
 		clickOn(loginButton);
 	}
@@ -23,7 +27,7 @@ public class HomePage extends BasePage{
 	public void enterEmail(String enterEmail) {
 		setValue(emailTextField, enterEmail);
 	}
-	
+
 	public void enterPassword(String enterPassword) {
 		setValue(passwordTextField, enterPassword);
 	}
@@ -67,10 +71,6 @@ public class HomePage extends BasePage{
 	public void clickOnMessengerLink() {
 		clickOn(messengerLink);
 	}
-
-
-
-
 
 
 

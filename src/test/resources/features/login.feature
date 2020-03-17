@@ -31,3 +31,4 @@ Feature: Login feature
       | mohammad@technosoftacademy.io | test1234 |
       | chris@technosoftacademy.io    | abc123   |
       | smith@technosoftacademy.io    | test     |
+

@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("darksky_current_temp.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Login feature",
+  "line": 3,
+  "name": "Current temperature feature",
   "description": "",
-  "id": "login-feature",
+  "id": "current-temperature-feature",
   "keyword": "Feature",
   "tags": [
     {
@@ -16,132 +16,61 @@ formatter.feature({
     },
     {
       "line": 1,
-      "name": "@login"
+      "name": "@temperature"
     }
   ]
 });
 formatter.before({
-  "duration": 4730078014,
+  "duration": 4036530407,
   "status": "passed"
 });
 formatter.background({
-  "line": 4,
+  "line": 5,
   "name": "",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 5,
-  "name": "I am on home page",
+  "line": 6,
+  "name": "I am on DarkSky home page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginSD.iAmOnHomePage()"
+  "location": "DarkskyCurrentTempSD.iamOnDarkskyHomePage()"
 });
 formatter.result({
-  "duration": 481901834,
+  "duration": 435939087,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 15,
-  "name": "Verify Invalid Login two",
+  "line": 9,
+  "name": "Verify current temperature falls between projected \"high\" and \"low\" temperature",
   "description": "",
-  "id": "login-feature;verify-invalid-login-two",
+  "id": "current-temperature-feature;verify-current-temperature-falls-between-projected-\"high\"-and-\"low\"-temperature",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 14,
-      "name": "@login-2"
+      "line": 8,
+      "name": "@current-temperature-high-low"
     }
   ]
 });
 formatter.step({
-  "line": 16,
-  "name": "I enter chris@technosoftacademy.io into username text fields on home screen",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 17,
-  "name": "I enter abc1234 into password text fields on home screen",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "I click on login button on home screen",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "I verify that i am an invalid login page",
+  "line": 10,
+  "name": "I verify the current temperature is between the expected \u0027low\u0027 and \u0027high\u0027",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 20,
-  "name": "I see number 12 in text field",
-  "keyword": "And "
-});
 formatter.match({
-  "arguments": [
-    {
-      "val": "chris@technosoftacademy.io",
-      "offset": 8
-    },
-    {
-      "val": "username",
-      "offset": 40
-    }
-  ],
-  "location": "LoginSD.enterDataIntoTextFields(String,String)"
+  "location": "DarkskyCurrentTempSD.CurrentTemperatureIsInBetween()"
 });
 formatter.result({
-  "duration": 394150357,
+  "duration": 383964444,
   "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "abc1234",
-      "offset": 8
-    },
-    {
-      "val": "password",
-      "offset": 21
-    }
-  ],
-  "location": "LoginSD.enterDataIntoTextFields(String,String)"
-});
-formatter.result({
-  "duration": 113034950,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "login",
-      "offset": 11
-    }
-  ],
-  "location": "LoginSD.clickOnLoginButton(String)"
-});
-formatter.result({
-  "duration": 5200650863,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSD.verifyInvalidLoginPage()"
-});
-formatter.result({
-  "duration": 45346921,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
 });
 formatter.after({
-  "duration": 257015376,
+  "duration": 113094300,
   "status": "passed"
 });
 });
